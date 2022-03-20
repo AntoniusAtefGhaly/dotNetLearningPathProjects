@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Beginner", "Beginner", "{1B1351E7-74FE-4E25-A5D2-08D787FDA00D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET Core Fundamentals", "ASP.NET Core Fundamentals", "{76FCF70D-DB57-4A4E-902C-634E0DE0B884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood", "Beiginner\ASP.NET Core Fundamentals\OdeToFood\OdeToFood.csproj", "{9BE10623-3E18-4AF7-B335-044EEF0E004D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Core", "Beiginner\ASP.NET Core Fundamentals\OdeToFood.Core\OdeToFood.Core.csproj", "{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Data", "Beiginner\ASP.NET Core Fundamentals\OdeToFood.Data\OdeToFood.Data.csproj", "{4D731FE5-E320-46EC-AEB2-66370B551948}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE10623-3E18-4AF7-B335-044EEF0E004D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE10623-3E18-4AF7-B335-044EEF0E004D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE10623-3E18-4AF7-B335-044EEF0E004D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE10623-3E18-4AF7-B335-044EEF0E004D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D731FE5-E320-46EC-AEB2-66370B551948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D731FE5-E320-46EC-AEB2-66370B551948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D731FE5-E320-46EC-AEB2-66370B551948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D731FE5-E320-46EC-AEB2-66370B551948}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76FCF70D-DB57-4A4E-902C-634E0DE0B884} = {1B1351E7-74FE-4E25-A5D2-08D787FDA00D}
+		{9BE10623-3E18-4AF7-B335-044EEF0E004D} = {76FCF70D-DB57-4A4E-902C-634E0DE0B884}
+		{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E} = {76FCF70D-DB57-4A4E-902C-634E0DE0B884}
+		{4D731FE5-E320-46EC-AEB2-66370B551948} = {76FCF70D-DB57-4A4E-902C-634E0DE0B884}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E4AE64D-78FC-4F68-BE49-727B3913E5D0}
+	EndGlobalSection
+EndGlobal
