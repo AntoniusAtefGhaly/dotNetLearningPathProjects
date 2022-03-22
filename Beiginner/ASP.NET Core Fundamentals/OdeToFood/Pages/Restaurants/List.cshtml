@@ -19,11 +19,15 @@
 <table class="table active">
     @foreach (var r in Model.restaurants)
     {
-        <tr>
-            <td>@r.Id</td>
-            <td>@r.Name</td>
-            <td>@r.Cuisine</td>
-            <td>@r.Location</td>
-        </tr>
+    <tr>
+
+        <td> @r.Id </td>
+        <td>@r.Name</td>
+        <td>@r.Cuisine</td>
+        <td>@r.Location</td>
+        <td>
+            <a class="btn btn-success" asp-page="./Details" asp-route-Id="@r.Id">Details </a>
+        </td>
+    </tr>
     }
 </table>

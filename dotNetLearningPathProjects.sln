@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Beginner", "Beginner", "{1B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET Core Fundamentals", "ASP.NET Core Fundamentals", "{76FCF70D-DB57-4A4E-902C-634E0DE0B884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood", "Beiginner\ASP.NET Core Fundamentals\OdeToFood\OdeToFood.csproj", "{9BE10623-3E18-4AF7-B335-044EEF0E004D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "Beiginner\ASP.NET Core Fundamentals\OdeToFood\OdeToFood.csproj", "{9BE10623-3E18-4AF7-B335-044EEF0E004D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Core", "Beiginner\ASP.NET Core Fundamentals\OdeToFood.Core\OdeToFood.Core.csproj", "{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood.Core", "Beiginner\ASP.NET Core Fundamentals\OdeToFood.Core\OdeToFood.Core.csproj", "{BC5FE24C-C5DE-4FD2-BCF2-747CD1E3615E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Data", "Beiginner\ASP.NET Core Fundamentals\OdeToFood.Data\OdeToFood.Data.csproj", "{4D731FE5-E320-46EC-AEB2-66370B551948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood.Data", "Beiginner\ASP.NET Core Fundamentals\OdeToFood.Data\OdeToFood.Data.csproj", "{4D731FE5-E320-46EC-AEB2-66370B551948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
