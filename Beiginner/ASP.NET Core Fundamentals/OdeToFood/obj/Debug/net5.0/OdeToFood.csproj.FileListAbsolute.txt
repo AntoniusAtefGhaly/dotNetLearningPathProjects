@@ -1083,3 +1083,6 @@ D:\training\dotNetLearningPath\dotNetLearningPathProjects\Beiginner\ASP.NET Core
 D:\training\dotNetLearningPath\dotNetLearningPathProjects\Beiginner\ASP.NET Core Fundamentals\OdeToFood\obj\Debug\net5.0\ref\OdeToFood.dll
 D:\training\dotNetLearningPath\dotNetLearningPathProjects\Beiginner\ASP.NET Core Fundamentals\OdeToFood\obj\Debug\net5.0\OdeToFood.pdb
 D:\training\dotNetLearningPath\dotNetLearningPathProjects\Beiginner\ASP.NET Core Fundamentals\OdeToFood\obj\Debug\net5.0\OdeToFood.genruntimeconfig.cache
+D:\1.NET\dotNetLearningPath\dotNetLearningPathProjects\Beiginner\ASP.NET Core Fundamentals\OdeToFood\obj\Debug\net5.0\Razor\Pages\Restaurants\Details.cshtml.g.cs
+D:\1.NET\dotNetLearningPath\dotNetLearningPathProjects\Beiginner\ASP.NET Core Fundamentals\OdeToFood\obj\Debug\net5.0\Razor\Pages\Restaurants\Notfound.cshtml.g.cs
+D:\1.NET\dotNetLearningPath\dotNetLearningPathProjects\Beiginner\ASP.NET Core Fundamentals\OdeToFood\obj\Debug\net5.0\Razor\Pages\Restaurants\Edit.cshtml.g.cs

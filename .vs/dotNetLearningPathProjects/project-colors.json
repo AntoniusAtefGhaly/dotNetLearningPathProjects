@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9be10623-3e18-4af7-b335-044eef0e004d": {
+      "ProjectGuid": "9be10623-3e18-4af7-b335-044eef0e004d",
+      "DisplayName": "OdeToFood",
+      "ColorIndex": 0
+    },
+    "bc5fe24c-c5de-4fd2-bcf2-747cd1e3615e": {
+      "ProjectGuid": "bc5fe24c-c5de-4fd2-bcf2-747cd1e3615e",
+      "DisplayName": "OdeToFood.Core",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

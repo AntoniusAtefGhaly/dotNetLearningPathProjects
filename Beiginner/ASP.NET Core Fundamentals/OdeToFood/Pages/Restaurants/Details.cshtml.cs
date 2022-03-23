@@ -16,10 +16,15 @@ namespace OdeToFood.Pages.Restaurants
         public Restaurant Restaurant { get; set; }
         [BindProperty(SupportsGet =true)]
         public int Id { get; set; }
-        public void OnGet(int Id)
+        public ActionResult OnGet(int Id)
         {
             this.Id = Id;
             Restaurant = restaurantdata.GetById(Id);
+            if(Restaurant==null)
+            {
+                return RedirectToPage("./Notfound");
+            }
+            return Page();
         }
         public DetailsModel(IrestaurantData restaurantdata)
         {

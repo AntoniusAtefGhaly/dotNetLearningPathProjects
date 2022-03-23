@@ -27,7 +27,14 @@
         <td>@r.Location</td>
         <td>
             <a class="btn btn-success" asp-page="./Details" asp-route-Id="@r.Id">Details </a>
+            <a class="btn btn-info" asp-page="./Edit" asp-route-Id="@r.Id">Edit </a>
         </td>
     </tr>
     }
+    <tr>
+        <td>
+            <a class="btn btn-info" asp-page="./Edit">Add new </a>
+        </td>
+    </tr>
+
 </table>
