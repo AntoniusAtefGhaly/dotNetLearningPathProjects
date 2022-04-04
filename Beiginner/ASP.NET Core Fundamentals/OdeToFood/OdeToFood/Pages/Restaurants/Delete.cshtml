@@ -1,0 +1,32 @@
+﻿@page "{id}"
+@model OdeToFood.Pages.Restaurants.DeleteModel
+@{
+    Layout = null;
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OdeToFood</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <title>delete</title>
+</head>
+<body>
+    <h2>Delete  </h2>
+    <form method="post">
+        <div class="alert-danger">
+            do you want to delete
+        </div>
+        <br />
+        <button class="btn btn-danger" type="submit">
+            Confirm
+        </button>
+            <a class="btn btn-success" asp-page="./List" >Cancel </a>
+
+            
+        </button>
+                    <vc:restaurant-count></vc:restaurant-count>
+
+    </form>
+</body>
+

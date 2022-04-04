@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<!DOCTYPE html>
+<html lang="en">
+@{
+    @using OdeToFood.Core
+    @model Restaurant
+
+}
+
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"> @Model.Name </h5>
+        <p>id: @Model.Id</p>
+        <p>Location: @Model.Location</p>
+        <p>Cuisine: @Model.Cuisine</p>
+        <a class="btn btn-success" asp-page="./Details" asp-route-Id="@Model.Id">Details </a>
+        <a class="btn btn-info" asp-page="./Edit" asp-route-Id="@Model.Id">Edit </a>
+        <a class="btn btn-danger" asp-page="./Delete" asp-route-Id="@Model.Id">Delete </a>
+    </div>
+</div>
+
+
+@*<div class="panel ">
+    <div class="btn-primary panel-heading">
+        @Model.Name
+    </div>
+    <div class="panel-body active">
+        <span>id: @Model.Id</span>
+        <span>id: @Model.Location</span>
+        <span>id: @Model.Cuisine</span>
+    </div>
+    <div class="panel-footer">
+
+        <a class="btn btn-success" asp-page="./Details" asp-route-Id="@Model.Id">Details </a>
+        <a class="btn btn-info" asp-page="./Edit" asp-route-Id="@Model.Id">Edit </a>
+        <a class="btn btn-danger" asp-page="./Delete" asp-route-Id="@Model.Id">Delete </a>
+    </div>
+</div>*@
+
+
+

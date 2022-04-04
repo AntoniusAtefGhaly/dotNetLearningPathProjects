@@ -12,7 +12,7 @@ namespace OdeToFood.Pages.Restaurants
 {
     public class ListModel : PageModel
     {
-        public string msg;
+        public string msg { get; set; }
        public IEnumerable<Restaurant> restaurants { get; set; }
         private IConfiguration config { get; set; }
         private readonly IrestaurantData restaurantData;
@@ -21,7 +21,7 @@ namespace OdeToFood.Pages.Restaurants
 
         public void OnGet()
         {
-            //            msg =config["msg"];
+                        msg =config["msg"];
             if(SearchKey != null)
             restaurants = restaurantData.SearchByName(SearchKey);
         }

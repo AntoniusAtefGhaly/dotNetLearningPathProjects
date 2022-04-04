@@ -31,7 +31,7 @@ namespace OdeToFood.Data
             var res = db.Restaurants.Find(id);
             if(res != null)
             {
-                db.Remove(id);
+                db.Restaurants.Remove(res);
             }
             Commit();
             return res;

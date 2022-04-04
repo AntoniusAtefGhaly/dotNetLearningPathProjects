@@ -20,21 +20,32 @@
     @foreach (var r in Model.restaurants)
     {
     <tr>
-
-        <td> @r.Id </td>
+        <partial name="_Summary" model=r> 
+        </partial>        
+@*       <td> @r.Id </td>
         <td>@r.Name</td>
         <td>@r.Cuisine</td>
         <td>@r.Location</td>
-        <td>
+
+        
+
+<td>
             <a class="btn btn-success" asp-page="./Details" asp-route-Id="@r.Id">Details </a>
             <a class="btn btn-info" asp-page="./Edit" asp-route-Id="@r.Id">Edit </a>
+            <a class="btn btn-danger" asp-page="./Delete" asp-route-Id="@r.Id">Delete </a>
         </td>
+        *@
     </tr>
+    
     }
-    <tr>
-        <td>
-            <a class="btn btn-info" asp-page="./Edit">Add new </a>
-        </td>
-    </tr>
 
 </table>
+            <a class="btn btn-info" asp-page="./Edit">Add new </a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+@section footer{
+    <p>@Model.msg</p>
+}
