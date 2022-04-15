@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {}
+    "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {}
   },
   "projects": {
-    "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+    "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "projectUniqueName": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
         "projectName": "OdeToFood.Core",
-        "projectPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\obj\\",
+        "projectPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "packagesPath": "C:\\Users\\AntoniusA\\.nuget\\packages\\",
+        "outputPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AntoniusA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -62,20 +64,22 @@
         }
       }
     },
-    "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
+    "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+        "projectUniqueName": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
         "projectName": "OdeToFood.Data",
-        "projectPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\obj\\",
+        "projectPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+        "packagesPath": "C:\\Users\\AntoniusA\\.nuget\\packages\\",
+        "outputPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AntoniusA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -90,8 +94,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
-                "projectPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
+              "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+                "projectPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
               }
             }
           }
@@ -140,20 +144,22 @@
         }
       }
     },
-    "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
+    "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "projectUniqueName": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
         "projectName": "OdeToFood",
-        "projectPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\obj\\",
+        "projectPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "packagesPath": "C:\\Users\\AntoniusA\\.nuget\\packages\\",
+        "outputPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AntoniusA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -168,8 +174,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
-                "projectPath": "D:\\1.NET\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj"
+              "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
+                "projectPath": "D:\\training\\dotNetLearningPath\\dotNetLearningPathProjects\\Beiginner\\ASP.NET Core Fundamentals\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj"
               }
             }
           }
