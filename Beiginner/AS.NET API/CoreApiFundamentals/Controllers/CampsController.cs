@@ -14,13 +14,13 @@ namespace CoreCodeCamp.Controllers
     [ApiController]
     public class CampsController : ControllerBase
     {
-        private readonly ICampRepository repository;
-        private readonly IMapper mapper;
+        private readonly ICampRepository _repository;
+        private readonly IMapper _mapper;
 
         public CampsController(ICampRepository repository,IMapper mapper)
         {
-            this.repository = repository;
-            this.mapper = mapper;
+            this._repository = repository;
+            this._mapper = mapper;
         }
         //[Route("api/[Controller]")]
         [HttpGet]
@@ -28,8 +28,8 @@ namespace CoreCodeCamp.Controllers
         {
             try
             {
-                var result = await repository.GetAllCampsAsync(Talks);
-                return mapper.Map<CampModel[]>(result);
+                var result = await _repository.GetAllCampsAsync(Talks);
+                return _mapper.Map<CampModel[]>(result);
                 //return campModels;
             }
             catch (Exception ex)
@@ -44,8 +44,8 @@ namespace CoreCodeCamp.Controllers
         {
             try
             {
-                var result = await repository.GetCampAsync(moniker);
-                CampModel campModels = mapper.Map<CampModel>(result);
+                var result = await _repository.GetCampAsync(moniker);
+                CampModel campModels = _mapper.Map<CampModel>(result);
                 return campModels;
             }
             catch (Exception ex)
@@ -56,10 +56,19 @@ namespace CoreCodeCamp.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CampModel>> ActionResult(CampModel model)
+        public async Task<ActionResult<CampModel>> ActionResult([FromBody] CampModel model)
         {
-            return Ok();
-
+            try
+            {
+                Camp camp =_mapper.Map<Camp>(model);
+                 _repository.Add(camp);
+                return  Created("",_mapper.Map<CampModel>(camp));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+            return BadRequest();
         }
     }
 }
