@@ -8,14 +8,17 @@ namespace CoreCodeCamp.Data
     {
         public CampProfile()
         {
-            this.CreateMap<Camp,CampModel>().
-                ForMember(c=>c.LocationId,o=>o.MapFrom(m=>m.Location.LocationId));
+            //this.CreateMap<Camp,CampModel>().
+            //    ForMember(c=>c.LocationId,o=>o.MapFrom(m=>m.Location.LocationId));
             this.CreateMap<CampModel, Camp>();
+            this.CreateMap<Camp, CampModel>();
+            this.CreateMap<TalkModel, Talk>();
+            this.CreateMap<Talk, TalkModel>();
 
             //this.CreateMap<Camp, CampModel>().
             //    ForMember(c => c.Talks, o => o.MapFrom(m => m.Talks));
-            this.CreateMap<Camp, CampModel>().ForMember(dest => dest.Talks, opt =>
-                   opt.MapFrom(src => src.Talks.Select(x => x.TalkId)));
+            //this.CreateMap<Camp, CampModel>().ForMember(dest => dest.Talks, opt =>
+            //       opt.MapFrom(src => src.Talks.Select(x => x.TalkId)));
 
         }
     }

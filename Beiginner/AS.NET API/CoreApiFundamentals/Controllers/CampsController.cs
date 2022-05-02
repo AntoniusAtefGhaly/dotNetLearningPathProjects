@@ -13,21 +13,22 @@ namespace CoreCodeCamp.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
+    [ApiVersion("1.1")]
     public class CampsController : ControllerBase
     {
         private readonly ICampRepository _repository;
         private readonly IMapper _mapper;
         private readonly LinkGenerator _linkGenerator;
 
-        public CampsController(ICampRepository repository,IMapper mapper,LinkGenerator linkGenerator)
+        public CampsController(ICampRepository repository, IMapper mapper, LinkGenerator linkGenerator)
         {
             this._repository = repository;
             this._mapper = mapper;
             this._linkGenerator = linkGenerator;
         }
-        //[Route("api/[Controller]")]
-        [HttpGet]
-        public async Task< ActionResult<CampModel[]>> Get(bool Talks)
+        [HttpGet("{Talks}")]
+        public async Task<ActionResult<CampModel[]>> Get(bool Talks)
         {
             try
             {
@@ -41,14 +42,15 @@ namespace CoreCodeCamp.Controllers
                 //return BadRequest(ex.Message);
             }
         }
-   
-    
-        public async Task<ActionResult<CampModel>> Get()
+
+        [HttpGet]
+        [MapToApiVersion("1.0")]
+        public async Task<ActionResult<CampModel[]>> Get()
         {
             try
             {
                 var result = await _repository.GetAllCampsAsync();
-                CampModel campModels = _mapper.Map<CampModel>(result);
+                CampModel[] campModels = _mapper.Map<CampModel[]>(result);
                 return campModels;
             }
             catch (Exception ex)
@@ -57,6 +59,25 @@ namespace CoreCodeCamp.Controllers
                 //return BadRequest(ex.Message);
             }
         }
+        [HttpGet]
+        [MapToApiVersion("1.1")]
+        public async Task<ActionResult<CampModel[]>> Get1()
+        {
+            try
+            {
+                var result = await _repository.GetAllCampsAsync();
+                CampModel[] campModels = _mapper.Map<CampModel[]>(result);
+                return campModels;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                //return BadRequest(ex.Message);
+            }
+        }
+
+
+
         [HttpGet("{moniker}")]
         public async Task<ActionResult<CampModel>> Get(string moniker)
         {
@@ -87,8 +108,9 @@ namespace CoreCodeCamp.Controllers
                     });
                 Camp camp =_mapper.Map<Camp>(model);
                  _repository.Add(camp);
-                _repository.SaveChangesAsync();
-                return  Created(location,_mapper.Map<CampModel>(camp));
+                await _repository.SaveChangesAsync();
+                CampModel res=_mapper.Map<CampModel>(camp);
+                return  Created(location,res);
             }
             catch (Exception ex)
             {
